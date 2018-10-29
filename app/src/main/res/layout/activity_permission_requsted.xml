@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PermissionRequsted">
+
+    <Switch
+        android:id="@+id/internet_switch"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="Internet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/network_status_switch" />
+
+    <Switch
+        android:id="@+id/read_switch"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="Read External Storage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exact_location_switch" />
+
+    <Switch
+        android:id="@+id/write_switch"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="Write External Storage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/internet_switch" />
+
+    <Switch
+        android:id="@+id/general_location_switch"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="General Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/write_switch" />
+
+    <Switch
+        android:id="@+id/exact_location_switch"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="Exact Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/general_location_switch" />
+
+    <Switch
+        android:id="@+id/network_status_switch"
+        android:layout_width="300dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="36dp"
+        android:text="Network Status"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Project Scorpion</string>
+    <string name="title_activity_web">WebActivity</string>
+    <string name="title_activity_main_display">MainDisplay</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="login_icon_png">login_icon_description</string>
+    <string name="LOGIN">Login</string>
+    <string name="AutoCompleteTextView" />
+    <string name="JobSearch">Job Title</string>
+    <string name="jobSearchHint">Enter Job Title You Are Searching For Here</string>
+    <string name="GPS_Location">Allow GPS to determine location</string>
+    <string name="City_Location">Enter City to search here</string>
+    <string name="City">City</string>
+    <string name="State">State</string>
+    <string name="State_AutoComplete" />
+    <string name="State_Location">Enter State to search here</string>
+    <string name="info">Note: Current version only supports search in US</string>
+    <string name="Search_Button">SEARCH</string>
+    <string name="City_Name" />
+    <string name="Create_Account">Create Account</string>
+    <string name="save">SAVE</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="lastName">Last Name</string>
+    <string name="middleName">Middle Name or Initial</string>
+    <string name="firstName">First Name</string>
+    <string name="searchedForResults">You searched for:</string>/>
+</resources>
+
+
