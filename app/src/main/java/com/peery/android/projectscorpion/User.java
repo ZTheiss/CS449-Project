@@ -1,21 +1,18 @@
 package com.peery.android.projectscorpion;
 
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
-
-@Entity(tableName = "user_table")
 public class User {
 
-    @PrimaryKey(autoGenerate = true)
     private int id;
+    private String username;
+    private String email;
+    private String password;
 
-    private String userName;
+    public void setEmail(String em){
+        this.email = em;
+    }
 
-    private String userPassword;
-
-    public User(String userName, String userPassword) {
-        this.userName = userName;
-        this.userPassword = userPassword;
+    public String getEmail(){
+        return email;
     }
 
     public void setId(int id) {
@@ -26,11 +23,19 @@ public class User {
         return id;
     }
 
-    public String getUserName() {
-        return userName;
+    public void setUsername(String UN){
+        this.username = UN;
     }
 
-    public String getUserPassword() {
-        return userPassword;
+    public String getUserName() {
+        return username;
+    }
+
+    public void setPassword(String pw){
+        this.password = pw;
+    }
+
+    public String getPassword() {
+        return password;
     }
 }

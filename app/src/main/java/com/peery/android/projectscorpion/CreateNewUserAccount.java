@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class CreateNewUserAccount extends AppCompatActivity {
 
-    SQLiteDbHelper mDbHelper = new SQLiteDbHelper(this, null, null, 1);
+    //SQLiteDbHelper mDbHelper = new SQLiteDbHelper(this, null, null, 1);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +41,7 @@ public class CreateNewUserAccount extends AppCompatActivity {
                 } else {
 
                     if (userPassword.equals(confirmUserPassword)) {
-                        mDbHelper.insertUser(userName, userPassword);
+                        //mDbHelper.insertUser(userName, userPassword);
                         startActivity(new Intent(CreateNewUserAccount.this,
                                 MainActivity.class));
                     } else {
