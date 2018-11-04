@@ -16,12 +16,13 @@ public class CreateNewUserAccount extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_new_user_account);
+        setContentView(R.layout.activity_register);
 
-        final EditText mUserName = findViewById(R.id.username_editText);
-        final EditText mPassword = findViewById(R.id.password_editText);
-        final EditText mConfirmPassword = findViewById(R.id.confirm_password_editText);
-        final Button mSave = findViewById(R.id.save_button);
+        final EditText mName = findViewById(R.id.nameInput);
+        final EditText mUserName = findViewById(R.id.emailInput);
+        final EditText mPassword = findViewById(R.id.passwordInput);
+        final EditText mConfirmPassword = findViewById(R.id.passwordConfirmInput);
+        final Button mSave = findViewById(R.id.register);
 
         // will check that all fields have been filled and that password entries match
         // will then save data to phone
