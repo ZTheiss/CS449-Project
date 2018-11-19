@@ -1,6 +1,9 @@
 apply plugin: 'com.android.application'
 
 android {
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.peery.android.projectscorpion"
@@ -50,7 +53,6 @@ dependencies {
     // Room components
     implementation "androidx.room:room-runtime:$room_version"
     annotationProcessor "androidx.room:room-compiler:$room_version"
-
 
 }
 

@@ -17,7 +17,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,10 +27,14 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".UsersListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CreateNewUserAccount"
+            android:screenOrientation="portrait"/>
         <activity android:name=".JobSearchMain" />
         <activity android:name=".WebSearchResults" />
-        <activity android:name=".CreateNewUserAccount"/>
-
 
     </application>
 

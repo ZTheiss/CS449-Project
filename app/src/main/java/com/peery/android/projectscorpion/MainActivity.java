@@ -1,3 +1,4 @@
+/*
 package com.peery.android.projectscorpion;
 
 import android.Manifest;
@@ -18,13 +19,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+*/
 /**
  * Login screen will ask for user name and password. Currently the app does not write to the
  * phone. This activity will also ask for the users permission to read/write to the SD to store the
  * user name and password the user will create on first time use. As well as grant the permission to
  * store the profile they will create to auto fill resumes. The resume autofill method/activity will
  * be implemented in a later version of the app.
- */
+ *//*
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -44,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //set variables to xml id's
-        mUserName = findViewById(R.id.username_id);
+        mUserName = findViewById(R.id.viewTextName);
         mPassword = findViewById(R.id.password_id);
         mLogin_Button = findViewById(R.id.login_button);
         mCreateAccountButton = findViewById(R.id.create_account_button);
@@ -57,9 +60,11 @@ public class MainActivity extends AppCompatActivity {
                 //permission request will run on first time user logs into account. If user denies
                 //permission, user will be warned that they will not be able to use the app
                 readStoragePermissionRequest();
-                /* todo : will check that a profile exists on phone. if not will show toast to let user
-                know that an account needs to be created first
                 */
+/* todo : will check that a profile exists on phone. if not will show toast to let user
+                know that an account needs to be created first
+                *//*
+
                 // will check that fields are not empty
                 if (mUserName.getText().toString().isEmpty() || mPassword.getText().toString().isEmpty()) {
                     Toast.makeText(MainActivity.this, "Enter both UserName and Password.",
@@ -176,3 +181,4 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 }
+*/

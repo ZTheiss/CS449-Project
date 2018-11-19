@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -70,7 +71,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 verifyFromSQLite();
                 break;
             case R.id.register:
-                Intent registerIntent = new Intent(getApplicationContext(), RegisterActivity.class);
+                Intent registerIntent = new Intent(getApplicationContext(), CreateNewUserAccount.class);
                 startActivity(registerIntent);
                 break;
         }
@@ -91,6 +92,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             accountsIntent.putExtra("EMAIL", textEditEmail.getText().toString().trim());
             emptyInputEditText();
             startActivity(accountsIntent);
+        }
+        else{
+            Snackbar.make(nestedScrollView, "Please enter valid email or password.", Snackbar.LENGTH_LONG).show();
         }
 
     }
