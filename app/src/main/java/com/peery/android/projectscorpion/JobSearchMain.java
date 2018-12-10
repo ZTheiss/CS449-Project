@@ -92,7 +92,6 @@ public class JobSearchMain extends AppCompatActivity {
                 != PackageManager.PERMISSION_GRANTED) {
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
                     Manifest.permission.ACCESS_NETWORK_STATE)) {
-                // todo : create alert dialog fro reason persmission is needed to display to the user
             } else {
                 ActivityCompat.requestPermissions(this, new String[]
                                 {Manifest.permission.ACCESS_NETWORK_STATE},

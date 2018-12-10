@@ -52,6 +52,8 @@ public class UsersListActivity extends AppCompatActivity{
         getDataSQL();
     }
 
+    //Asynctask to get the SQL request independently
+
     private void getDataSQL(){
         new AsyncTask<Void, Void, Void>() {
             @Override

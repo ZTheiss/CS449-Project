@@ -9,6 +9,8 @@ import android.view.inputmethod.InputMethodManager;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
+//Checks the input from the user for login verification
+
 public class ValidInput {
     private Context context;
 

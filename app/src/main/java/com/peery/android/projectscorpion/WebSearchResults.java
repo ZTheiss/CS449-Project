@@ -34,7 +34,7 @@ public class WebSearchResults extends AppCompatActivity {
        // state = mState.getText().toString();
         // get search statement from JobSearchMain.class to display to user on WebSearchResults
         // activity page
-       // mDisplaySearchQueryAsString = JobSearchMain.getSearchCriteria(job, city, state);
+       mDisplaySearchQueryAsString = JobSearchMain.getSearchCriteria(job, city, state);
 
         mSearchedForResults = findViewById(R.id.searched_for_result_textView);
 

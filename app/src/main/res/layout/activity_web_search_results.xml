@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".WebSearchResults">
 
-
     <WebView
         android:id="@+id/view_id"
         android:layout_width="395dp"
@@ -20,6 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Shows the result of search -->
     <TextView
         android:id="@+id/searched_for_result_textView"
         android:layout_width="wrap_content"
